@@ -1,0 +1,41 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#copy {
+  font-size: x-large;
+}
+
+#overview {
+  padding: 20px;
+  table {
+    th {
+      vertical-align: top;
+    }
+  }
+  float: left;
+}
+
+#access_map {
+  float: right;
+}
+
+.reset {
+  clear: both;
+}
+
+#schedule {
+  padding: 20px;
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #535F6A;
+
+    td {
+      padding: 10px;
+      border: 1px solid #535F6A;
+      border-collapse: collapse;
+    }
+  }
+}
