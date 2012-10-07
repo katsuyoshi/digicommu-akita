@@ -1,12 +1,13 @@
 DigicommuAkita::Application.routes.draw do
   match "schedule" => 'schedule#index'
+  match "access" => 'welcome#index'
 
   get "schedule/index"
   get "schedule/show"
   get "schedule/organization"
 
   get "welcome/index"
-  get "welcome/schedule"
+  get "welcome/access"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

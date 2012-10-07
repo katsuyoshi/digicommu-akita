@@ -1,5 +1,9 @@
-class Schedule
+class Schedule < FileBaseModel
 
+  def self.filename
+    'schedule_2012.yml'
+  end
+=begin
   def self.find_all
     @@schedules ||= begin
       a = YAML.load(File.read(File.join(Rails.root, 'db', 'schedule_2012.yml')))
@@ -13,14 +17,9 @@ class Schedule
     end
     nil
   end
+=end
 
   attr_accessor :start, :title, :kind, :abstract, :organization_tmplate, :organization
-
-  def initialize h
-    h.each do |k, v|
-      send(:"#{k}=", v)
-    end
-  end
 
   def has_link?
     self.abstract

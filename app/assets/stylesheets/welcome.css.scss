@@ -13,11 +13,6 @@
       vertical-align: top;
     }
   }
-  float: left;
-}
-
-#access_map {
-  float: right;
 }
 
 .reset {
@@ -56,6 +51,18 @@
 
   }
 
+}
+
+#access_content {
+  width: 50%;
+  float: left;
+}
+
+#access_side {
+  float: right;
+  #access_map {
+    margin-top: 20px;
+  }
 }
 
 
