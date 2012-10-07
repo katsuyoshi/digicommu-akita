@@ -1,0 +1,9 @@
+- @title = @schedule.organization
+
+#community
+  %h2= @schedule.organization 
+  - if @schedule.organization_tmplate
+    = render :partial => @schedule.organization_tmplate
+  - else
+
+= link_to '戻る', schedule_index_path

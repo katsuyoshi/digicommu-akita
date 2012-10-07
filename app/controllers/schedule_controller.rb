@@ -4,5 +4,11 @@ class ScheduleController < ApplicationController
   end
 
   def show
+    @schedule = Schedule.find(params[:id])
   end
+
+  def organization
+    @schedule = Schedule.find(params[:id])
+  end
+  
 end

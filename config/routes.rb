@@ -3,6 +3,7 @@ DigicommuAkita::Application.routes.draw do
 
   get "schedule/index"
   get "schedule/show"
+  get "schedule/organization"
 
   get "welcome/index"
   get "welcome/schedule"

@@ -6,19 +6,27 @@
   title: オープニング
 - kind: session
   start: '10:15'
-  title: Akit Ruby Meeting(秋田Rubyお楽しみ会)
+  title: TBD
+  organization: Akit Ruby Meeting(秋田Rubyお楽しみ会)
+  organization_tmplate: arm
 - kind: break
   start: '11:45'
   title: 昼休み(昼食)
 - kind: session
   start: '13:00'
-  title: JAGA(日本Androidの会秋田支部)
+  title: TBD
+  organization: JAGA(日本Androidの会秋田支部)
+  organization_tmplate: jaga
 - kind: break
   start: '14:30'
-  title: おやつタイム(佐藤家から和菓子とコーヒーのもてなし)
+  title: おやつタイム(和菓子とコーヒーのもてなし)
+  organization: 佐藤家
+  organization_tmplate: satouke
 - kind: session
   start: '15:00'
-  title: Akita.m
+  title: TBD
+  organization: Akita.m
+  organization_tmplate: akitam
 - kind: break
   start: '16:30'
   title: 休憩

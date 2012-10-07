@@ -1,0 +1,11 @@
+- @title = 'スケジュール'
+
+#schedule{name:'schedule'}
+  %h2 スケジュール
+  %h3 2012年11月10日土曜日
+
+  %table
+    - @schdules.each do |schedule|
+      %tr{ 'class' => schedule.kind }
+        %td= "#{schedule.start} - " 
+        %td= schedule.title

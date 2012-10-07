@@ -1,9 +1,6 @@
 - @title = 'スケジュール'
 
-%div#main_title
-  %h1 デジコミュ秋田 2012
-
-%div#schedule{name:'schedule'}
+#schedule{name:'schedule'}
   %h2 スケジュール
   %h3 2012年11月10日土曜日
 
@@ -16,3 +13,6 @@
             = link_to schedule.title, schedule_show_path(:id => schedule.id)
           - else
             = schedule.title
+          - if schedule.organization
+            %br
+            = link_to schedule.organization, schedule_organization_path(:id => schedule.id)

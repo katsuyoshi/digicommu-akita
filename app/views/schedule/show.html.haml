@@ -1,2 +1,17 @@
-%h1 Schedule#show
-%p Find me in app/views/schedule/show.html.haml
+- @title = @schedule.title
+
+#schedule{name:'schedule'}
+  %h2 タイトル
+  %p= @schedule.title
+  
+  %h3 時間
+  %p
+    2012年11月10日土曜日
+    %br
+    = @schedule.start + " - "
+
+  %h3 内容
+  %p
+    = @schedule.description if @schedule.description
+
+= link_to '戻る', schedule_index_path
