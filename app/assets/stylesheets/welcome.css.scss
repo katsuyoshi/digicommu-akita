@@ -37,5 +37,25 @@
       border: 1px solid #535F6A;
       border-collapse: collapse;
     }
+
+    tr.session {
+      background-color: #CCFFCC;
+    }
+    tr.lightning-talks {
+      background-color: #CCFFFF;
+    }
+    tr.opening, tr.closing {
+      background-color: #FFCCCC;
+    }
+    tr.party {
+      background-color: #FFFF99;
+    }
+    tr.info, tr.break {
+      background-color: #F0F0F0;
+    }
+
   }
+
 }
+
+
