@@ -1,0 +1,4 @@
+- articles.each do |a|
+  %h3= a.title
+  .article_body.p= raw(a.body)
+  .article_created_at.p= a.created_at

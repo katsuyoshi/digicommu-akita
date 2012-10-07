@@ -1,13 +1,19 @@
 class FileBaseModel
 
+  @@collection_dict = {}
+  
   def self.filename
   end
 
   def self.find_all
-    @@articles ||= begin
+    @@collection_dict[self.filename] ||= begin
       a = YAML.load(File.read(File.join(Rails.root, 'db', filename)))
       a.map{|e| self.new e}
     end
+  end
+
+  def self.all
+    find_all
   end
 
   def self.find id

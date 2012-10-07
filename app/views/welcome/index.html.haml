@@ -22,7 +22,7 @@
       %td 2012年11月10日(土)<br />会場 9:30 - 施 18:00
     %tr
       %th 会場
-      %td 秋田県産業技術センター  
+      %td 秋田県産業技術センター<br />秋田県秋田市新屋町字砂奴寄4-11  
     %tr
       %th 主催
       %td デジコミュ秋田 2012実行委員会  
@@ -35,5 +35,10 @@
     %tr
       %th 懇親会
       %td 有料
+
+#article{name:'articles'}
+  %h2 新着
+  - @articles.each do |article|
+    %p #{article.title} (#{article.created_at})
 
 .reset

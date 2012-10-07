@@ -1,10 +1,15 @@
 DigicommuAkita::Application.routes.draw do
+
   match "schedule" => 'schedule#index'
   match "access" => 'welcome#index'
+  match "articles" => 'articles#index'
 
   get "schedule/index"
   get "schedule/show"
   get "schedule/organization"
+
+  get "articles/index"
+  get "articles/show"
 
   get "welcome/index"
   get "welcome/access"

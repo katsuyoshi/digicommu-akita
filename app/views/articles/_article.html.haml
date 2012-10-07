@@ -1,0 +1,4 @@
+#article
+  %h3= link_to article.title, articles_show_path(id:article.id)
+  .article_body.p= raw(article.body)
+  .article_created_at.p= article.created_at
