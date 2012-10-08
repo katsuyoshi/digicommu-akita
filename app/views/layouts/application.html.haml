@@ -11,6 +11,8 @@
       #header
         %h1 デジコミュ秋田 2012
         #navigation
-          = render :partial => 'layouts/menu'
+          = render partial: 'layouts/menu'
       #content
         = yield
+      #footer
+        = render partial: 'layouts/footer'
