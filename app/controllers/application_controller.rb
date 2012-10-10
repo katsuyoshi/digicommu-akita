@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   def password_protected
     authenticate_or_request_with_http_basic do |username, password|
-      username == "digicommu" && password == "akita"
+      username == ENV[STAGING_USER] && password == ENV[STAGING_PASSWORD]
     end
   end
 

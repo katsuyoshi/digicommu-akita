@@ -1,7 +1,7 @@
 - @title = @article.title
-=render partial: 'article', :locals => { article:@article }
+=render partial:'article', :locals => { article:@article }
 
 
 %p
 
-= link_to '戻る', articles_path
+= link_to_function "戻る", "history.back()"

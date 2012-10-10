@@ -41,6 +41,6 @@
 #article{name:'articles'}
   %h2 新着
   - @articles.each do |article|
-    %p #{article.title} (#{article.created_at})
+    %p #{link_to article.title, articles_show_path(:id => article.id) } (#{l article.created_at, :format => :default})
 
 .reset

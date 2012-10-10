@@ -6,4 +6,4 @@
     = render :partial => @schedule.organization_tmplate
   - else
 
-= link_to '戻る', schedule_index_path
+= link_to_function "戻る", "history.back()"
