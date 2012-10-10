@@ -25,6 +25,12 @@ class FileBaseModel
 
   def initialize h
     h.each do |k, v|
+      if k == 'created_at'
+        case v
+        when String
+          v = Time.parse v
+        end
+      end
       send(:"#{k}=", v)
     end
   end
