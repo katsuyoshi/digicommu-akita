@@ -7,7 +7,7 @@
 - kind: session
   start: '10:15'
   title: TBD
-  organization: Akit Ruby Meeting(秋田Rubyお楽しみ会)
+  organization: Akita Ruby Meeting(秋田Rubyお楽しみ会)
   organization_tmplate: arm
 - kind: break
   start: '11:45'
