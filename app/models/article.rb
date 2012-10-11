@@ -9,5 +9,12 @@ class Article < FileBaseModel
   def id
     self.created_at
   end
+
+  def self.find_by_title title
+    all.each do |a|
+      return a if a.title == title
+    end
+    nil
+  end
   
 end

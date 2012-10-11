@@ -13,6 +13,36 @@
       vertical-align: top;
     }
   }
+  float: left;
+}
+
+.split_right {
+  float: right;
+}
+
+.registration {
+  padding: 20px;
+  width: 250px;
+
+  table {
+    width: 100%;
+  }
+  tr {
+  }
+  td {
+    height: 60px;
+    font-size: large;
+    text-align: center;
+    color: white;
+    background-color:Mediumseagreen;
+    border-radius: 0.5em; 
+  }
+  a {
+    letter-spacing: 1px;
+    font-family: 'Crete Round', serif;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .reset {

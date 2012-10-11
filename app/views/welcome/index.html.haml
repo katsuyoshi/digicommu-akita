@@ -14,7 +14,7 @@
     皆様のご参加を心からお待ちしております。
     %br
 
-#overview{name:'overview'}
+#theme
   %h2 テーマ
   %h3 「知る」
   %p
@@ -25,30 +25,48 @@
     デジコミュ秋田 2012に参加された皆様が、何か一つでも新しい気づき(知る事)に出会える場になればと考えています。
     %br
 
+.split
+  .split_left
+    #overview{name:'overview'}
 
-  %h2 概要
-  %table
-    %tr
-      %th 日時
-      %td 2012年11月10日(土)<br />会場 9:30 - 退場 18:00
-    %tr
-      %th 会場
-      %td 秋田県産業技術センター<br />秋田県秋田市新屋町字砂奴寄4-11  
-    %tr
-      %th 主催
-      %td デジコミュ秋田 2012実行委員会  
-    %tr
-      %th 参加コミュニティ 
-      %td #{link_to 'JAGA(日本Androidの会秋田支部)', '/schedule/organization?id=13%3A00'}<br />#{link_to 'Akita.m', '/schedule/organization?id=15%3A00'}<br />#{link_to 'Akita Ruby Meeting(秋田Rubyお楽しみ会)', '/schedule/organization?id=10%3A15'}
-    %tr
-      %th 参加費
-      %td 全日 1,000円<br />午前のみ 300円<br />#{link_to '参加登録はこちらから', 'http://digicommu-akita.doorkeeper.jp/events/1855'}
-    %tr
-      %th{ rowspan:2 } 懇親会
-      %td #{link_to "Radio's Bar", "http://www.shukanren.com/member/association_member_info/radiosbar.html"}<br />秋田県秋田市大町5-2-40<br />#{link_to '参加登録はこちらから', 'http://digicommu-akita.doorkeeper.jp/events/1856'}
-    %tr 
-      %td 会費 4,000円
+      %h2 概要
+      %table
+        %tr
+          %th 日時
+          %td 2012年11月10日(土)<br />会場 9:30 - 退場 18:00
+        %tr
+          %th 会場
+          %td 秋田県産業技術センター<br />秋田県秋田市新屋町字砂奴寄4-11  
+        %tr
+          %th 主催
+          %td デジコミュ秋田 2012実行委員会  
+        %tr
+          %th 参加コミュニティ 
+          %td #{link_to 'JAGA(日本Androidの会秋田支部)', '/schedule/organization?id=13%3A00'}<br />#{link_to 'Akita.m', '/schedule/organization?id=15%3A00'}<br />#{link_to 'Akita Ruby Meeting(秋田Rubyお楽しみ会)', '/schedule/organization?id=10%3A15'}
+        %tr
+          %th 参加費
+          %td 全日 1,000円<br />午前のみ 300円<br />#{link_to '参加登録はこちらから', 'http://digicommu-akita.doorkeeper.jp/events/1855'}
+        %tr
+          %th{ rowspan:2 } 懇親会
+          %td #{link_to "Radio's Bar", "http://www.shukanren.com/member/association_member_info/radiosbar.html"}<br />秋田県秋田市大町5-2-40<br />#{link_to '参加登録はこちらから', 'http://digicommu-akita.doorkeeper.jp/events/1856'}
+        %tr 
+          %td 会費 4,000円
 
+  .split_right
+    .registration
+      %h3 参加登録
+      %table
+        %tr
+          %td
+            #{link_to '本編参加', 'http://digicommu-akita.doorkeeper.jp/events/1855'}
+        %tr
+          %td
+            #{link_to '懇親会参加', 'http://digicommu-akita.doorkeeper.jp/events/1856'}
+        %tr
+          %td
+            #{link_to 'ライトニングトークス応募', "/articles/show?id=lt"}
+
+.reset
 #article{name:'articles'}
   %h3 最新情報
   - @articles.each do |article|
