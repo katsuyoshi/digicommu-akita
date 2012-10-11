@@ -15,6 +15,17 @@
     %br
 
 #overview{name:'overview'}
+  %h2 テーマ
+  %h3 「知る」
+  %p
+    デジコミュ秋田 2012は、各コミュニティの事を知ってもらい、活動内容を知ってもらう機会として開催します。
+    %br
+    各コミュニティーの目的に色々あると思いますが、その中には自分の知らない事を知る、人を知るという事があると思います。
+    %br
+    デジコミュ秋田 2012に参加された皆様が、何か一つでも新しい気づき(知る事)に出会える場になればと考えています。
+    %br
+
+
   %h2 概要
   %table
     %tr
@@ -39,7 +50,7 @@
       %td 会費 4,000円
 
 #article{name:'articles'}
-  %h2 新着
+  %h3 最新情報
   - @articles.each do |article|
     %p #{link_to article.title, articles_show_path(:id => article.id) } (#{l article.created_at, :format => :default})
 
