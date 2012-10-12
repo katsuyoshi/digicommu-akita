@@ -7,7 +7,7 @@
   %table
     - @schdules.each do |schedule|
       %tr{ 'class' => schedule.kind }
-        %td= "#{schedule.start} - " 
+        %td #{time_range_of_schedule schedule} 
         %td
           - if schedule.has_link?
             = link_to schedule.title, schedule_show_path(:id => schedule.id)

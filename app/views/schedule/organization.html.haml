@@ -2,8 +2,6 @@
 
 #community
   %h2= @schedule.organization 
-  - if @schedule.organization_tmplate
-    = render :partial => @schedule.organization_tmplate
-  - else
+  = render :partial => @schedule.organization_tmplate if @schedule.organization_tmplate
 
 = link_to_function "戻る", "history.back()"

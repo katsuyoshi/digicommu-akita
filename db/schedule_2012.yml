@@ -3,42 +3,54 @@
   title: 開場
 - kind: opening
   start: '10:00'
+  end: '10:05'
   title: オープニング
 - kind: session
   start: '10:15'
-  title: TBD
+  end: '11:45'
+  title: 初めてのプログラミングで初めてのユニットテスト
+  abstract_template: abstract_arm
   organization: Akita Ruby Meeting(秋田Rubyお楽しみ会)
   organization_tmplate: arm
 - kind: break
   start: '11:45'
+  end: '13:00'
   title: 昼休み(昼食)
 - kind: session
   start: '13:00'
+  end: '14:30'
   title: TBD
+  abstract_template: abstract_jaga
   organization: JAGA(日本Androidの会秋田支部)
   organization_tmplate: jaga
 - kind: break
   start: '14:30'
+  end: '15:00'
   title: おやつタイム(和菓子とコーヒーのもてなし)
   organization: 佐藤家
   organization_tmplate: satouke
 - kind: session
   start: '15:00'
-  title: TBD
+  end: '16:30'
+  title: アジャイルサムライ読書会 第7章 見積り:当てずっぽうの奥義
+  abstract_template: abstract_akitam
   organization: Akita.m
   organization_tmplate: akitam
 - kind: break
   start: '16:30'
+  end: '16:45'
   title: 休憩
 - kind: 'lightning-talks'
   start: '16:45'
+  end: '17:30'
   title: ライトニングトークス
 - kind: closing
   start: '17:30'
+  end: '17:35'
   title: クロージング
 - kind: info
   start: '18:00'
   title: 退出、移動
 - kind: party
   start: '19:00'
-  title: 懇親会
+  title: 懇親会(Radio's Bar)
