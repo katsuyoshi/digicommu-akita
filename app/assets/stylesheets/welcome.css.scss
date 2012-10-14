@@ -38,12 +38,6 @@
     background-color:Mediumseagreen;
     border-radius: 0.5em; 
   }
-  a {
-    letter-spacing: 1px;
-    font-family: 'Crete Round', serif;
-    color: white;
-    text-decoration: none;
-  }
 }
 
 .reset {
@@ -59,28 +53,20 @@
   
   table {
     width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #535F6A;
 
-    td {
-      padding: 10px;
-      border: 1px solid #535F6A;
-      border-collapse: collapse;
+    tr.sc-session {
+      background-color: #DFF0D8;
     }
-
-    tr.session {
-      background-color: #CCFFCC;
-    }
-    tr.lightning-talks {
+    tr.sc-lightning-talks {
       background-color: #CCFFFF;
     }
-    tr.opening, tr.closing {
-      background-color: #FFCCCC;
+    tr.sc-opening, tr.sc-closing {
+      background-color: #F2DEDE;
     }
-    tr.party {
-      background-color: #FFFF99;
+    tr.sc-party {
+      background-color: #FCF8E3;
     }
-    tr.info, tr.break {
+    tr.sc-info, tr.sc-break {
       background-color: #F0F0F0;
     }
 
