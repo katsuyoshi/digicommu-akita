@@ -59,7 +59,7 @@
           %td #{link_to 'JAGA(日本Androidの会秋田支部)', '/schedule/organization?id=13%3A00'}<br />#{link_to 'Akita.m', '/schedule/organization?id=15%3A00'}<br />#{link_to 'Akita Ruby Meeting(秋田Rubyお楽しみ会)', '/schedule/organization?id=10%3A15'}
         %tr
           %th 参加費
-          %td 全日 1,000円<br />午前のみ 300円
+          %td 全日 一般 1,000円, 学生 500円<br />午前のみ 一般 300円, 学生 無料
         %tr
           %th{ rowspan:3 } 懇親会
           %td #{link_to "Radio's Bar", "http://www.shukanren.com/member/association_member_info/radiosbar.html"}<br />秋田県秋田市大町5-2-40<br />
@@ -73,7 +73,7 @@
           %ul
             %li 会場には普段着でお越し下さい。
             %li 昼食は近くにお食事処が少ないため車を利用するか、予めコンビニで購入したり手作り弁当を持参するなどして下さい。
-            %li 自販機はあります。
+            %li 飲み物は自販機があります。
 
 
   .split_right
@@ -89,9 +89,14 @@
         %font{ color:'Tomato'} 懇親会会場、和菓子の用意等の都合がありますので、早めのお申込みに協力いただけると助かります。
 
 .reset
+
+%hr
 #article{name:'articles'}
   %h3 最新情報
   - @articles.each do |article|
     %p #{link_to article.title, articles_show_path(:id => article.id) } (#{l article.created_at, :format => :default})
+
+%hr
+= render partial:'credit'
 
 .reset

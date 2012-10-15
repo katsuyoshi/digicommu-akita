@@ -1,0 +1,19 @@
+chairperson:
+  sns_type: twitter
+  handle: gutskun
+staffs:
+  - sns_type: twitter
+    handle: mackapple
+  - sns_type: twitter
+    handle: yashioo
+  - sns_type: twitter
+    handle: dzonesasaki
+  - sns_type: 
+    handle: モノスヤ
+contributors:
+  - sns_type: twitter
+    handle: yomoapp
+    message: サイト改善
+  - sns_type: twitter
+    handle: MUNAKATA_Akiko
+    message: 画像提供
