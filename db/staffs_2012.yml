@@ -3,11 +3,11 @@ chairperson:
   handle: gutskun
 staffs:
   - sns_type: twitter
+    handle: dzonesasaki
+  - sns_type: twitter
     handle: mackapple
   - sns_type: twitter
     handle: yashioo
-  - sns_type: twitter
-    handle: dzonesasaki
   - sns_type: 
     handle: モノスヤ
 contributors:
