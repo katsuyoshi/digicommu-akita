@@ -48,32 +48,6 @@
   margin-left: 20px;  
 }
 
-#schedule {
-  padding: 20px;
-  
-  table {
-    width: 100%;
-
-    tr.sc-session {
-      background-color: #DFF0D8;
-    }
-    tr.sc-lightning-talks {
-      background-color: #CCFFFF;
-    }
-    tr.sc-opening, tr.sc-closing {
-      background-color: #F2DEDE;
-    }
-    tr.sc-party {
-      background-color: #FCF8E3;
-    }
-    tr.sc-info, tr.sc-break {
-      background-color: #F0F0F0;
-    }
-
-  }
-
-}
-
 #access_content {
   width: 50%;
   float: left;

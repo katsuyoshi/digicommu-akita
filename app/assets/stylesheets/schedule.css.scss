@@ -1,3 +1,36 @@
 // Place all the styles related to the Schedule controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#schedule {
+  padding: 20px;
+  
+  table {
+    width: 100%;
+
+    tr.sc-session {
+      background-color: #DFF0D8;
+    }
+    tr.sc-lightning-talks {
+      background-color: #CCFFFF;
+    }
+    tr.sc-opening, tr.sc-closing {
+      background-color: #F2DEDE;
+    }
+    tr.sc-party {
+      background-color: #FCF8E3;
+    }
+    tr.sc-info, tr.sc-break {
+      background-color: #F0F0F0;
+    }
+
+  }
+
+  .title {
+  }
+  .organization {
+    padding-left: 40px;  
+    border-top: 0px;
+  }
+}
