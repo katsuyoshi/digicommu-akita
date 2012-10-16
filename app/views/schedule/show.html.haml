@@ -1,6 +1,7 @@
 - @page_title = @schedule.title
 
 #schedule{name:'schedule'}
+  %h3 タイトル
   %h2= @schedule.title
   %h3= link_to @schedule.organization, schedule_organization_path(:id => @schedule.id)
   
