@@ -63,9 +63,13 @@ class Staff
 
 private
   def get_from_twitter
-    h = JSON.parse(open("https://api.twitter.com/1/users/show.json?screen_name=#{handle}").read)
-    @name = h['name']
-    @image_url = h['profile_image_url']        
+    begin
+      h = JSON.parse(open("https://api.twitter.com/1/users/show.json?screen_name=#{handle}").read)
+      @name = h['name']
+      @image_url = h['profile_image_url']        
+    rescue Exception => e
+      p e
+    end
   end
 
 end
