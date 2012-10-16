@@ -97,6 +97,12 @@
     %p #{link_to article.title, articles_show_path(:id => article.id) } (#{l article.created_at, :format => :default})
 
 %hr
+#cooperation{name:'cooperation'}
+  %h3 協賛
+  %ul
+    %li= link_to "ANOG (Akita Network Operators' Group)", schedule_organization_path(id:'anog')
+
+%hr
 = render partial:'credit'
 
 .reset

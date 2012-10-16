@@ -8,7 +8,11 @@ class ScheduleController < ApplicationController
   end
 
   def organization
-    @schedule = Schedule.find(params[:id])
+    if params[:id] == 'anog'
+      @schedule = Schedule.anog
+    else
+      @schedule = Schedule.find(params[:id])
+    end
   end
 
   def abstract
