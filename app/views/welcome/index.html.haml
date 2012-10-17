@@ -85,6 +85,16 @@
       %a.btn.btn-large.btn-block{:href => 'http://digicommu-akita.doorkeeper.jp/events/1856'} 懇親会参加
       %a.btn.btn-large.btn-block{:href => '/articles/show?id=lt'} ライトニングトークス応募
       %hr
+      %h4 申し込み状況
+      %table
+        - @registration_status.each do |status|
+          - title = status[:title] == 'デジコミュ秋田 2012' ? '本編' : '懇親会'
+          %tr
+            %th{width:'150px'}= title
+            %td= status[:participants]
+            %td /
+            %td= status[:ticket_limit]
+      %hr
       %p
         %font{ color:'Tomato'} 懇親会会場、和菓子の用意等の都合がありますので、早めのお申込みに協力いただけると助かります。
 
