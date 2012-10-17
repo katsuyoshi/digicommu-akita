@@ -8,8 +8,8 @@ staffs:
     handle: mackapple
   - sns_type: twitter
     handle: yashioo
-  - sns_type: 
-    handle: モノスヤ
+  - sns_type: twitter
+    handle: MONOSUYA
 contributors:
   - sns_type: twitter
     handle: yomoapp
