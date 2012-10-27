@@ -7,8 +7,8 @@
     秋田県内のITコミュニティ、Akita Ruby Meeting(秋田Rubyお楽しみ会)、JAGA(日本Androidの会秋田支部)、Akita.mが同日開催されます。
     %br
     %hr
-    %a.btn.btn-large.btn{:href => 'http://digicommu-akita.doorkeeper.jp/events/1855'} 
-      本編参加登録 »
+    - if Time.now < entry_deadline
+      %a.btn.btn-large.btn{:href => 'http://digicommu-akita.doorkeeper.jp/events/1855'} 本編参加登録 »
 
 #aim{name:'aim'}
   %h2 趣旨
@@ -79,11 +79,35 @@
   .split_right
     .registration
       %h3 参加登録
-      %a.btn.btn-large.btn-block.btn-primary{:href => 'http://digicommu-akita.doorkeeper.jp/events/1855'} 
-        %i.icon-edit.icon-white
-        本編参加
-      %a.btn.btn-large.btn-block{:href => 'http://digicommu-akita.doorkeeper.jp/events/1856'} 懇親会参加
-      %a.btn.btn-large.btn-block{:href => '/articles/show?id=lt'} ライトニングトークス応募
+      
+      - if Time.now < entry_deadline
+        %a.btn.btn-large.btn-block.btn-primary{:href => 'http://digicommu-akita.doorkeeper.jp/events/1855'} 
+          %i.icon-edit.icon-white
+          本編参加
+        %p.countdown
+          全日チケット #{count_down_time entry_deadline}
+          %br
+          午前チケット #{count_down_time entry_only_morning_deadline}
+      - else
+        %br
+        本編申込み締め切りました。
+
+      - if Time.now < party_deadline
+        %a.btn.btn-large.btn-block{:href => 'http://digicommu-akita.doorkeeper.jp/events/1856'} 懇親会参加
+        %p.countdown
+          #{count_down_time party_deadline}
+      - else
+        %br
+        懇親会申込み締め切りました。
+      
+      - if Time.now < lightning_talks_deadline
+        %a.btn.btn-large.btn-block{:href => '/articles/show?id=lt'} ライトニングトークス応募
+        %p.countdown
+          #{count_down_time lightning_talks_deadline}
+      - else
+        %br
+        ライトニングトークス応募締め切りました。
+      
       %hr
       %h4 申し込み状況
       %table
