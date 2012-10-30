@@ -75,6 +75,9 @@
             %li 昼食は近くにお食事処が少ないため車を利用するか、予めコンビニで購入したり手作り弁当を持参するなどして下さい。
             %li 飲み物は自販機があります。
 
+      %h4 タグ
+      twitter : #dcom2012 
+
 
   .split_right
     .registration
@@ -125,18 +128,23 @@
 .reset
 
 %hr
-#article{name:'articles'}
-  %h3 最新情報
-  - @articles.each do |article|
-    %p #{link_to article.title, articles_show_path(:id => article.id) } (#{l article.created_at, :format => :default})
 
-%hr
-#cooperation{name:'cooperation'}
-  %h3 協賛
-  %ul
-    %li= link_to "ANOG (Akita Network Operators' Group)", schedule_organization_path(id:'anog')
+.split
+  .split_left
+    #article{name:'articles'}
+      %h3 最新情報
+      - @articles.each do |article|
+        %p #{link_to article.title, articles_show_path(:id => article.id) } (#{l article.created_at, :format => :default})
 
-%hr
-= render partial:'credit'
+    %hr
+    #cooperation{name:'cooperation'}
+      %h3 協賛
+      %ul
+        %li= link_to "ANOG (Akita Network Operators' Group)", schedule_organization_path(id:'anog')
+
+    %hr
+    = render partial:'credit'
+  .split_right
+    = render partial:'twitter_widgets'
 
 .reset
