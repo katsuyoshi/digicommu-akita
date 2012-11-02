@@ -2,5 +2,6 @@
   %h3= link_to article.title, articles_show_path(id:article.id)
   = render partial:article.body_template if article.body_template
   .article_body.p= raw(article.body) if article.body
+  %br
   .article_created_at.p= l article.created_at, :format => :default 
   %hr
