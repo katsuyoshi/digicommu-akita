@@ -8,8 +8,11 @@ class ScheduleController < ApplicationController
   end
 
   def organization
-    if params[:id] == 'anog'
+    case params[:id]
+    when 'anog'
       @schedule = Schedule.anog
+    when 'fandroid_akita'
+      @schedule = Schedule.fandroid_akita
     else
       @schedule = Schedule.find(params[:id])
     end
