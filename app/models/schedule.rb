@@ -16,8 +16,20 @@ class Schedule < FileBaseModel
   attr_accessor :start, :end, :title, :kind, :abstract_template, :abstract, :organization_tmplate, :organization
 
   def has_link?
-    self.abstract || self.abstract_template
+    self.abstract || self.abstract_template || self.kind == "lightning-talks"
   end
+
+  def lt_speakers
+    @speakers ||= begin
+      if self.kind == "lightning-talks"
+        Speaker.all
+      else
+        []
+      end
+    end
+    @speakers
+  end
+
 
   alias :id :start
 
