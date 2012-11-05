@@ -1,16 +1,42 @@
 - @page_title = @schedule.title
 
-#schedule{name:'schedule'}
-  %h3 タイトル
-  %h2= @schedule.title
-  %h3= link_to @schedule.organization, schedule_organization_path(:id => @schedule.id)
-  
-  %p
-    2012年11月10日土曜日
-    %br
-    = time_range_of_schedule @schedule
+- unless @schedule.kind == 'lightning-talks'
+  #schedule{name:'schedule'}
+    %h3 タイトル
+    %h2= @schedule.title
+    %h3= link_to @schedule.organization, schedule_organization_path(:id => @schedule.id)
+    
+    %p
+      2012年11月10日土曜日
+      %br
+      = time_range_of_schedule @schedule
 
-  %h3 内容
-  = render partial:@schedule.abstract_template if @schedule.abstract_template
+    %h3 内容
+    = render partial:@schedule.abstract_template if @schedule.abstract_template
+- else
+  #lightning_talks
+    %h3 タイトル
+    %h2 ライトニングトークス
+
+    %p
+      2012年11月10日土曜日
+      %br
+      = time_range_of_schedule @schedule
+
+    %table
+      - @schedule.lt_speakers.each_with_index do |speaker, i|
+        %tr
+          %td.number #{i + 1}
+          %td
+            %b #{speaker.title}
+          %td
+            %b #{speaker.name}
+        %tr
+          %td
+          %td{ :colspan => 2}
+            .indent1 #{speaker.abstract}
+        %tr
+          %td{ :colspan => 3} <br />
+
 
 = link_to '戻る', schedule_index_path
