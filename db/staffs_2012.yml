@@ -10,6 +10,8 @@ staffs:
     handle: yashioo
   - sns_type: twitter
     handle: MONOSUYA
+  - sns_type: twitter
+    handle: null8
 contributors:
   - sns_type: twitter
     handle: yomoapp
