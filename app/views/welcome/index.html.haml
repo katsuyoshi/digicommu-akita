@@ -83,14 +83,18 @@
     .registration
       %h3 参加登録
       
-      - if Time.now < entry_deadline
+      - if Time.now < entry_only_morning_deadline
         %a.btn.btn-large.btn-block.btn-primary{:href => 'http://digicommu-akita.doorkeeper.jp/events/1855'} 
           %i.icon-edit.icon-white
           本編参加
         %p.countdown
-          全日チケット #{count_down_time entry_deadline}
-          %br
           午前チケット #{count_down_time entry_only_morning_deadline}
+          %br
+          %br
+          - if Time.now < entry_deadline
+            全日チケット #{count_down_time entry_deadline}
+          -else
+            全日チケット申込み締め切りました。
       - else
         %br
         本編申込み締め切りました。
@@ -115,9 +119,15 @@
       %h4 申し込み状況
       %table
         - @registration_status.each do |status|
-          - title = status[:title] == 'デジコミュ秋田 2012' ? '本編' : '懇親会'
+          - if status[:title] == 'デジコミュ秋田 2012'
+            -  title =  '本編'
+            -  url = 'http://digicommu-akita.doorkeeper.jp/events/1855'
+          - else
+            -  title = '懇親会'
+            -  url = 'http://digicommu-akita.doorkeeper.jp/events/1856'
           %tr
-            %th{width:'150px'}= title
+            %th{width:'150px'}
+              %a{ href: url } #{title}
             %td= status[:participants]
             %td /
             %td= status[:ticket_limit]
