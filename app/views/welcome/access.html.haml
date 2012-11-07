@@ -1,6 +1,6 @@
 - @page_title = 'アクセス'
-.split
-  #access_content
+#access_content
+  .access_content
     %h2 本編会場
     .indent1
       %h3 #{link_to '秋田県産業技術センター', 'http://www.akita-iri.pref.akita.jp'} 
@@ -20,7 +20,13 @@
         路線名から県立プール線を選択し、バス停名で工業技術センター前を選択し土日祝を選択後表示を押します。
         %br
         = link_to '秋田中央交通 秋田駅から探す時刻・料金表', 'http://www.akita-chuoukotsu.co.jp/akitaeki-search.html'
-    %hr
+  .access_side
+    =render :partial => 'access_map'
+  
+  .reset
+  %hr
+
+  .access_content
     %h2 懇親会会場
     .indent1
       %h3 #{link_to "Radio's Bar", "http://www.shukanren.com/member/association_member_info/radiosbar.html"} 
@@ -47,9 +53,5 @@
         %br
         = link_to '秋田中央交通 秋田駅から探す時刻・料金表', 'http://www.akita-chuoukotsu.co.jp/akitaeki-search.html'
         %br
-      
-
-  #access_side
-    #access_map
-      =render :partial => 'access_map'
-
+  .access_side
+    =render :partial => 'access_map_2'
