@@ -1,0 +1,21 @@
+- @page_title = 'スケジュール'
+
+#schedule{name:'schedule'}
+  %h2 
+    スケジュール
+    %small 2012年11月10日土曜日
+
+  %table.table
+    - @schdules.each do |schedule|
+      %tr{ 'class' => "sc-"+schedule.kind }
+        %td{ rowspan:2 }
+          #{time_range_of_schedule schedule} 
+        %td.title
+          - if schedule.has_link?
+            = link_to schedule.title, schedule_show_path(:id => schedule.id)
+          - else
+            = schedule.title
+      %tr{ 'class' => "sc-"+schedule.kind }
+        %td.organization
+          - if schedule.organization
+            = link_to schedule.organization, schedule_organization_path(:id => schedule.id)

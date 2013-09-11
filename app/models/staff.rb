@@ -44,19 +44,26 @@ class Staff
 
   def name
     @name ||= begin
+=begin FIXME: twitter api is changed.
       if sns_type == 'twitter'
         get_from_twitter
       else
+=end
         handle
+=begin
       end
+=end
     end
   end
 
   def image_url
     @image_url ||= begin
+=begin FIXME: twitter api is changed.
       if sns_type == 'twitter'
         get_from_twitter
       end
+=end
+      nil
     end
   end
 

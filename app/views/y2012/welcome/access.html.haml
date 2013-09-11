@@ -1,0 +1,67 @@
+- @page_title = 'アクセス'
+#access_content
+  .access_content
+    %h2 本編会場
+    .indent1
+      %h3 #{link_to '秋田県産業技術センター', 'http://www.akita-iri.pref.akita.jp'} 
+      %p
+        %b 秋田県秋田市新屋町字砂奴寄4-11 
+
+    %h3 バスを利用される方
+    %h4 秋田駅からの移動
+    .indent1
+      %p
+        秋田駅西口から県立プール線(2番線)に乗車し工業技術センター前で降ります。
+        %br
+        9:30発のバスに乗車していただくと工業技術センター前9:57着です。
+      %p
+        こちらで時刻表を検索出来ます。
+        %br
+        路線名から県立プール線を選択し、バス停名で工業技術センター前を選択し土日祝を選択後表示を押します。
+        %br
+        = link_to '秋田中央交通 秋田駅から探す時刻・料金表', 'http://www.akita-chuoukotsu.co.jp/akitaeki-search.html'
+  .access_side
+    =render :partial => 'access_map'
+  
+  .reset
+  %hr
+
+  .access_content
+    %h2 懇親会会場
+    .indent1
+      %h3 #{link_to "Radio's Bar", "http://www.shukanren.com/member/association_member_info/radiosbar.html"} 
+      %p
+        %b 秋田県秋田市大町5-2-40 
+        %br
+        %b TEL 018-863-0055
+        %br
+        %a{ href:'http://www.team-radio.com/info_b.html'} 地図
+
+    %h4 秋田県産業技術センターからの移動
+    .indent1
+      %p
+        工業技術センター前から県立プール線に乗車し交通公社前か大町二丁目で降ります。
+        %br
+        18:01発のバスに乗車していただくと18:20に交通公社前に着きます。
+      %p
+        こちらで時刻表を検索出来ます。
+        %br
+        = link_to '秋田中央交通 バス停名から探す時刻表', 'http://www.akita-chuoukotsu.co.jp/busstop-search.html'
+
+    %h4 秋田駅からの移動
+    .indent1
+      %p
+        秋田駅西口から新屋線(7番線)か川尻割山線(8番線)に乗車し大町四丁目で降ります。
+      %p
+        こちらで時刻表を検索出来ます。
+        %br
+        = link_to '秋田中央交通 秋田駅から探す時刻・料金表', 'http://www.akita-chuoukotsu.co.jp/akitaeki-search.html'
+        %br
+  .access_side
+    =render :partial => 'access_map_2'
+    %br
+    %br
+    %img{ src:'http://www.team-radio.com/image/info_map_b1.gif' }
+    %br
+    %br
+

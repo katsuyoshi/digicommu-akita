@@ -1,18 +1,20 @@
 DigicommuAkita::Application.routes.draw do
 
-  match "schedule" => 'schedule#index'
-  match "access" => 'welcome#access'
-  match "articles" => 'articles#index'
+  scope "y2012" do
+    match "schedule" => 'y2012/schedule#index'
+    match "access" => 'y2012/welcome#access'
+    match "articles" => 'y2012/articles#index'
 
-  get "schedule/index"
-  get "schedule/show"
-  get "schedule/organization"
+    get "schedule/index"
+    get "schedule/show"
+    get "schedule/organization"
 
-  get "articles/index"
-  get "articles/show"
+    get "articles/index"
+    get "articles/show"
 
-  get "welcome/index"
-  get "welcome/access"
+    get "welcome/index"
+    get "welcome/access"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
