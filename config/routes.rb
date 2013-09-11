@@ -1,6 +1,8 @@
 DigicommuAkita::Application.routes.draw do
 
-  scope "y2012" do
+  get "welcome/index"
+
+  namespace "y2012" do
     match "schedule" => 'y2012/schedule#index'
     match "access" => 'y2012/welcome#access'
     match "articles" => 'y2012/articles#index'
