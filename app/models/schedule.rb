@@ -2,7 +2,7 @@
 class Schedule < FileBaseModel
 
   def self.filename
-    'schedule_2012.yml'
+    'schedule_2013.yml'
   end
 
   def self.anog
