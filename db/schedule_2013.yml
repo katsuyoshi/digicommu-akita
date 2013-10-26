@@ -23,7 +23,10 @@
 - kind: session
   start: '11:15'
   end: '11:45'
-  title: TBD
+  title: 間違い探しの作り方
+  abstract_template: abstract_konishi
+  organization: 小西 由紀子
+  organization_tmplate: konishi
 - kind: break
   start: '11:45'
   end: '12:30'

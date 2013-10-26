@@ -2,16 +2,18 @@
 
 - unless @schedule.kind == 'lightning-talks'
   #schedule{name:'schedule'}
-    %h3 タイトル
+    !!!%h3 ■タイトル
     %h2= @schedule.title
-    %h3= link_to @schedule.organization, schedule_organization_path(:id => @schedule.id)
+    !!!%h3 ■プレゼンテーター
+    %h2= link_to @schedule.organization, schedule_organization_path(:id => @schedule.id)
     
+    !!!%h3 ■時間
     %p
       2012年11月10日土曜日
       %br
       = time_range_of_schedule @schedule
 
-    %h3 内容
+    !!!%h3 ■内容
     = render partial:@schedule.abstract_template if @schedule.abstract_template
 - else
   #lightning_talks
