@@ -6,14 +6,13 @@
   %p
     %br
     %hr
-    - if Time.now < entry_deadline
-      %a.btn.btn-large.btn{:href => 'http://digicommu-akita.doorkeeper.jp/events/1855'} 本編参加登録 »
+    %a.btn.btn-large.btn{:href => 'http://digicommu-akita.doorkeeper.jp/events/6451'} デジコミュ秋田 2013申込み
 
 #aim{name:'aim'}
   %h2 はじめに
   .indent1
     %p
-      デジコミュ秋田は、県内で活動しているITコミュニティーが一堂に会し同日開催するイベントです。
+      デジコミュ秋田は、県内で活動しているITコミュニティーが一堂に会し同日開催する事を目的として始めたイベントです。
       
     %p
       2回目の開催となる、デジコミュ秋田 2013ではコミュニティの枠を越えて、より多くの分野の方から参加頂けるように考えています。
@@ -28,35 +27,52 @@
 #theme
 
 
-#main-schedule
-  %h2 スケジュール
-  .indent1
-    %p
-      内容はただ今調整中です。
-      %br
-      決まり次第更新します。
-      %br
-      10:00 - 17:00 : イベント
-      %br
-      17:30 - 20:30 : ビアバッシュ & LT大会 (成人のみ)
-      %br
-
-%hr
-
-  %p= link_to "申込みはこちらから", "http://digicommu-akita.doorkeeper.jp/events/6451"
-
 .split
   .split_left
     #overview{name:'overview'}
 
-    %h4 タグ
-    twitter : #dcakita
+      %h2 概要
+      %table
+        %tr
+          %th 日時
+          %td 2013年11月16日(土)<br />本編 開場 9:30 - 終了 17:00<br />ビアバッシュ 開始 17:30 - 終了 20:30
+        %tr
+          %th 会場
+          %td #{link_to 'にぎわい交流館 AU', 'http://www.akita-nigiwai-au.jp'}<br />秋田県秋田市中通一丁目４番１号
+        %tr
+          %th 主催
+          %td デジコミュ秋田 2013実行委員会
+        %tr
+          %th 参加コミュニティ 
+          %td #{link_to 'Akita Ruby Meeting(秋田Rubyお楽しみ会)', '/schedule/organization?id=10%3A15'}<br />#{link_to 'JAGA(日本Androidの会秋田支部)', '/schedule/organization?id=13%3A00'}<br />#{link_to 'Akita.m', '/schedule/organization?id=15%3A00'}
+        %tr
+          %th 参加費
+          %td 本編 一般 1,000円, 学生 500円　小中高生 無料<br />ビアバッシュ 一般のみ 1,500円
+        %tr
+          %th
+          %td
+            %font{color:'green'} <br />会場には普段着でお越し下さい。
 
+      %h4 タグ
+      twitter : #dcakita 
+
+
+  .split_right
+    .registration
+      %h3 参加登録
+      %a.btn.btn-large.btn{:href => 'http://digicommu-akita.doorkeeper.jp/events/6451'} デジコミュ秋田 2013申込み
+      %br
+      %br
+      %a.btn.btn-large.btn{:href => 'https://docs.google.com/spreadsheet/viewform?usp=drive_web&formkey=dG1ESFpmODh2X1pBNUE4c2wzYkIzX1E6MA#gid=0'} ライトニングトークス申込み
 
 
 .reset
 
 %hr
 
+%h3 新着情報
+%ul
+  %li スケジュールが一部を除いて確定しました。#{link_to "スケジュール一覧", schedule_index_path}をご覧下さい。(10/28)
+  %li #{link_to "ライトニングトークス発表者&ドラ娘の募集", lt_path}を開始しました。(10/28)
 
 .reset

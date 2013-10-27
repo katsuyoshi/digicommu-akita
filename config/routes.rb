@@ -1,11 +1,14 @@
 DigicommuAkita::Application.routes.draw do
 
   get "welcome/index"
+  get "welcome/lt"
   
   match "schedule" => 'schedule#index'
   get "schedule/index"
   get "schedule/show"
   get "schedule/organization"
+
+  match "lt" => 'welcome#lt'
 
   namespace "y2012" do
     match "schedule" => 'y2012/schedule#index'
