@@ -34,7 +34,10 @@
 - kind: session
   start: '12:30'
   end: '14:30'
-  title: TBD
+  title: 体験！ストップモーションアニメ
+  abstract_template: abstract_zeronium
+  organization: ㈱ゼロニウム
+  organization_tmplate: zeronium
 - kind: break
   start: '14:30'
   end: '15:00'
