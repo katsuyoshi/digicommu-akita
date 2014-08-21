@@ -2,71 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#copy {
-  font-size: x-large;
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #0daffa;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.hero-unit h1, h2 {
   color: white;
-}
-
-#overview {
-  padding: 20px;
-  width: 450px;
-  table {
-    th {
-      vertical-align: top;
-    }
-  }
-}
-
-.split_left {
-  float: left;
-}
-.split_right {
-  float: right;
-}
-
-.registration {
-  padding: 20px;
-  width: 250px;
-
-  table {
-    width: 100%;
-  }
-  tr {
-  }
-  td {
-    text-align: center;
-  }
-}
-
-.reset {
-  clear: both;
-}
-
-.indent1 {
-  margin-left: 20px;  
-}
-
-.access_content {
-  width: 50%;
-  float: left;
-}
-
-.access_side {
-  float: right;
-  #access_map {
-    margin-top: 20px;
-  }
-}
-
-.credit {
-  tr {
-    height: 72px;
-  }
-  td {
-    padding-left: 4px;
-  }
-}
-
-.countdown {
-    text-align: center;
 }
