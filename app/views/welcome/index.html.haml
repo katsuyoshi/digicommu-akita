@@ -87,8 +87,8 @@
           %br
           　　一般、学生のみ　1,500円
           %br
-          %br
-          #{link_to "参加申し込み", "http://digicommu-akita.doorkeeper.jp/events/14537", class:"btn btn-primary", target:"_blank"}
+          .text-right
+            #{link_to "参加申し込み", "http://digicommu-akita.doorkeeper.jp/events/14537", class:"btn btn-primary", target:"_blank"}
       %tr
         %td タグ
         %td #dcakita
@@ -112,88 +112,41 @@
         %th{width:"20%"} 時間帯
         %th{width:"40%"} 会場1
         %th{width:"40%"} 会場2
-      %tr
-        %td 9:30 -
-        %td 会場
-        %td
-      %tr
-        %td 10:00 - 10:05
-        %td オープニング
-        %td
-      %tr
-        %td 10:05 - 11:05
-        %td
-          小学生からでもはじめられるプログラミング〜Scratchでネコを動かしてみよう
-          %br
-          .text-right
-            Akita Ruby Meeting
-        %td
-      %tr
-        %td 11:10 - 11:40
-        %td
-          秋田幻燈夜2014について
-          %br
-          .text-right
-            株式会社ゼロニウム
-        %td
-      %tr
-        %td 11:40 - 13:00
-        %td 昼休み
-        %td
-      %tr
-        %td 13:00 - 14:30
-        %td
-          JAWS-UG秋田支部活動報告2014
-          %br
-          .text-right
-            JAWS-UG秋田
-            %br
-            武田 一成
-          WordPressサイト永代供養の儀
-          %br
-          .text-right
-            JAWS-UG東北・北海道エリアリーダー
-            %br
-            赤塚誠二
-        %td
-          「秋田のイイトコヘンナトコ」をテーマとした4コママンガで代弁する、「秋田4コママンガソン」(1)
-          %br
-          .text-right
-            スタジオアットテイク
-            %br
-            こばやしたけし
-      %tr
-        %td 14:30 - 15:00
-        %td{colspan:2}
-          おやつタイム(和菓子とコーヒーのもてなし)
-          %br
-          .text-right
-            佐藤家
-      %tr
-        %td 15:00 - 16:55
-        %td
-          (TBA)
-          %br
-          .text-right
-            JAGA
-        %td
-          「秋田のイイトコヘンナトコ」をテーマとした4コママンガで代弁する、「秋田4コママンガソン」(2)
-          %br
-          .text-right
-            スタジオアットテイク
-            %br
-            こばやしたけし
-      %tr
-        %td 16:55 - 17:00
-        %td{colspan:2} クロージング
-      %tr
-        %td 17:00 - 17:30
-        %td{colspan:2} 休憩
-      %tr
-        %td 17:30 - 20:30
-        %td{colspan:2}
-          ビアバッシュ & ライトニングトークス
-          #{link_to "ライトニングトークスに申し込む", "https://docs.google.com/spreadsheet/viewform?formkey=dHM1dUd1WUNtRmZyVXZCbWRpSVlqdUE6MA#gid=0", class:"btn btn-primary", target:"_blank"}
+      - @timelines.each do |timeline|
+        %tr
+          %td #{timeline["slot"]}
+          - if timeline["all"]
+            - room = timeline["all"]
+            - presentation = room["presentations"].first
+            %td{colspan:2}
+              - if presentation
+                .text-left
+                  #{presentation["title"]}
+                - if presentation["association"]
+                  .text-right
+                    #{presentation["association"]}
+                - if presentation["speaker"]
+                  .text-right
+                    #{presentation["speaker"]}
+                - if /ビアバッシュ/ =~ presentation["title"]
+                  .text-right
+                    #{link_to "ライトニングトークスに申し込む", "https://docs.google.com/spreadsheet/viewform?formkey=dHM1dUd1WUNtRmZyVXZCbWRpSVlqdUE6MA#gid=0", class:"btn btn-primary", target:"_blank"}
+          - else
+            - %w(会場1 会場2).each do |room_name|
+              - room = timeline[room_name]
+              %td
+                - if room
+                  - room["presentations"].each_with_index do |presentation, index|
+                    .text-left
+                      #{presentation["title"]}
+                    - if presentation["association"]
+                      .text-right
+                        #{presentation["association"]}
+                    - if presentation["speaker"]
+                      .text-right
+                        #{presentation["speaker"]}
+
+
 
       %tr
         %td 17:30 - 20:30

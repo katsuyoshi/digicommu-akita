@@ -1,0 +1,67 @@
+- slot: 9:30 -
+  all:
+    presentations:
+    - title: 開場
+- slot: 10:00 - 10:05
+  会場1:
+    presentations:
+    - title: オープニング
+- slot: 10:05 - 11:05
+  会場1:
+    presentations:
+    - title: 小学生からでもはじめられるプログラミング〜Scratchでネコを動かしてみよう
+      association: Akita Ruby Meeting
+- slot: 11:10 - 11:40
+  会場1:
+    presentations:
+    - title: 秋田幻燈夜2014について
+      association: 株式会社ゼロニウム
+- slot: 11:40 - 13:00
+  all:
+    presentations:
+    - title: 昼休み
+- slot: 13:00 - 14:30
+  会場1:
+    presentations:
+    - title: JAWS-UG秋田支部活動報告2014
+      association: JAWS-UG秋田
+      spearker: 武田 一成
+    - title: WordPressサイト永代供養の儀
+      association: JAWS-UG東北・北海道エリアリーダー
+      speaker: 赤塚誠二
+  会場2:
+    presentations:
+    - title: 「秋田のイイトコヘンナトコ」をテーマとした4コママンガで代弁する、「秋田4コママンガソン」(1)
+      association: スタジオアットテイク
+      speaker: こばやしたけし
+- slot: 14:30 - 15:00
+  all:
+    presentations:
+    - title: おやつタイム(和菓子とコーヒーのもてなし)
+      association: 佐藤家
+- slot: 13:00 - 14:30
+  会場1:
+    presentations:
+    - title: (TBA)
+      association: JAGA
+  会場2:
+    presentations:
+    - title: 「秋田のイイトコヘンナトコ」をテーマとした4コママンガで代弁する、「秋田4コママンガソン」(2)
+      association: スタジオアットテイク
+      speaker: こばやしたけし
+- slot: 16:55 - 17:00
+  all:
+    presentations:
+    - title: クロージング
+- slot: 17:00 - 17:30
+  all:
+    presentations:
+    - title: 休憩
+- slot: 17:30 - 20:30
+  all:
+    presentations:
+    - title: ビアバッシュ & ライトニングトークス
+- slot: 17:30 - 20:30
+  all:
+    presentations:
+    - title: 片付け、退出
