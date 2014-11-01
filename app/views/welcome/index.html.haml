@@ -138,7 +138,10 @@
                 - if room
                   - room["presentations"].each_with_index do |presentation, index|
                     .text-left
-                      #{presentation["title"]}
+                      - if presentation["summary"]
+                        = link_to presentation["title"], welcome_show_path(slot:timeline["slot"], room_name:room_name, index:index)
+                      - else
+                        #{presentation["title"]}
                     - if presentation["association"]
                       .text-right
                         #{presentation["association"]}
