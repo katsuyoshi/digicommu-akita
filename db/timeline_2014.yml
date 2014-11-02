@@ -22,6 +22,9 @@
     presentations:
     - title: ゼロから始める3Dモデリング
       association: JAGAモデリング部
+      summary:
+        パソコンは各自準備してください。<br />
+        Blenderというモデリングツールのインストールからはじめ、実際にモデルを作っていきます。<br />
 - slot: 11:10 - 11:40
   会場1:
     presentations:
