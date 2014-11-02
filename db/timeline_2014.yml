@@ -18,6 +18,10 @@
         Scratch Jrを使ってiPadでも参加できます。<br />
         <br />
         既にプログラミングの経験がある方は通常の自習形式(黙々勉強会)で興味がある事をしていただいても構いません。<br />
+  会場2:
+    presentations:
+    - title: ゼロから始める3Dモデリング
+      association: JAGAモデリング部
 - slot: 11:10 - 11:40
   会場1:
     presentations:
