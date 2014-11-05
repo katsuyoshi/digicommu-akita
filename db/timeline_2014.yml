@@ -71,7 +71,7 @@
     presentations:
     - title: おやつタイム(和菓子とコーヒーのもてなし)
       association: 佐藤家
-- slot: 13:00 - 14:30
+- slot: 15:00 - 16:55
   会場1:
     presentations:
     - title: 盆踊り体験システムを独自アップグレードをしてみ(仮称)
@@ -93,7 +93,7 @@
   all:
     presentations:
     - title: ビアバッシュ & ライトニングトークス
-- slot: 17:30 - 20:30
+- slot: 20:30 - 21:00
   all:
     presentations:
     - title: 片付け、退出
