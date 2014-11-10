@@ -2,10 +2,17 @@
 %hr
 %h3= @presentation["title"]
 
-%p
-  %b #{@slot} : #{@room_name}
+- unless @room_name == "all"
+  %p
+    %b #{@slot} : #{@room_name}
 
 %p=raw @presentation["summary"]
+
+- if @presentation["attention"]
+  %p
+    %font{color:"red"}
+      ※ #{raw @presentation["attention"]}
+
 
 %a{href:"#", onclick:'history.go(-1);return false;'} 戻る
 

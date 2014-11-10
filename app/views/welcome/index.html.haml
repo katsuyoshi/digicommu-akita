@@ -5,6 +5,9 @@
     %h2 2014年11月22日(土曜日)
     #{link_to "参加申し込み", "http://digicommu-akita.doorkeeper.jp/events/14537", class:"btn btn-primary", target:"_blank"}
     #{link_to "ライトニングトークス申し込み", "https://docs.google.com/spreadsheet/viewform?formkey=dHM1dUd1WUNtRmZyVXZCbWRpSVlqdUE6MA#gid=0", class:"btn btn-primary", target:"_blank"}
+  .text-center
+    %font{color:"white"}
+      締め切り: 11月19日 23時55分
 
 .row
   .span1
@@ -109,6 +112,10 @@
 
   .span10
 
+    %ul
+      %li 同時刻に開催されるセッションはいずれかを選択しての参加となります。
+      %li 会場1、会場2は参加人数によって入れ替わる場合があります。人数把握のために申し込み時のアンケートにご協力下さい。
+
     %table.table.table-striped.table-bordered
       %tr
         %th{width:"20%"} 時間帯
@@ -123,13 +130,17 @@
             %td{colspan:2}
               - if presentation
                 .text-left
-                  #{presentation["title"]}
+                  = link_to presentation["title"], welcome_show_path(slot:timeline["slot"], room_name:"all", index:0)
                 - if presentation["association"]
                   .text-right
                     #{presentation["association"]}
                 - if presentation["speaker"]
                   .text-right
                     #{presentation["speaker"]}
+                - if presentation["attention"]
+                  .text-left
+                    %font{color:"red"}
+                      ※ #{raw presentation["attention"]}
                 - if /ビアバッシュ/ =~ presentation["title"]
                   .text-right
                     #{link_to "ライトニングトークスに申し込む", "https://docs.google.com/spreadsheet/viewform?formkey=dHM1dUd1WUNtRmZyVXZCbWRpSVlqdUE6MA#gid=0", class:"btn btn-primary", target:"_blank"}
@@ -150,9 +161,9 @@
                     - if presentation["speaker"]
                       .text-right
                         #{presentation["speaker"]}
-
-    %ul
-      %li 同時刻に開催されるセッションはいずれかを選択しての参加となります。
-      %li 会場1、会場2は参加人数によって入れ替わる場合があります。人数把握のために申し込み時のアンケートにご協力下さい。
+                    - if presentation["attention"]
+                      .text-left
+                        %font{color:"red"}
+                          ※ #{raw presentation["attention"]}
 
 
