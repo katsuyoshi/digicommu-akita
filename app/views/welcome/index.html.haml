@@ -130,7 +130,10 @@
             %td{colspan:2}
               - if presentation
                 .text-left
-                  = link_to presentation["title"], welcome_show_path(slot:timeline["slot"], room_name:"all", index:0)
+                  - if presentation["summary"]
+                    = link_to presentation["title"], welcome_show_path(slot:timeline["slot"], room_name:"all", index:0)
+                  - else
+                    #{presentation["title"]}
                 - if presentation["association"]
                   .text-right
                     #{presentation["association"]}
