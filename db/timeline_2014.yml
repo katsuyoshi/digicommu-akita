@@ -9,6 +9,14 @@
 - slot: 10:05 - 11:05
   会場1:
     presentations:
+    - title: ゼロから始める3Dモデリング
+      association: JAGAモデリング部
+      summary:
+        パソコンは各自準備してください。<br />
+        <a href="http://blender.jp" target="_blank">Blender</a>というモデリングツールのインストールからはじめ、実際にモデルを作っていきます。<br />
+      attention: ノートパソコンをお持ちの方は持参ください。スクロールボタンのついたマウスも必要になります。
+  会場2:
+    presentations:
     - title: 小学生からでもはじめられるプログラミング〜Scratchでネコを動かしてみよう
       association: Akita Ruby Meeting
       summary:
@@ -19,14 +27,6 @@
         <br />
         既にプログラミングの経験がある方は通常の自習形式(黙々勉強会)で興味がある事をしていただいても構いません。<br />
       attention: ノートパソコンをお持ちの方は持参ください。
-  会場2:
-    presentations:
-    - title: ゼロから始める3Dモデリング
-      association: JAGAモデリング部
-      summary:
-        パソコンは各自準備してください。<br />
-        <a href="http://blender.jp" target="_blank">Blender</a>というモデリングツールのインストールからはじめ、実際にモデルを作っていきます。<br />
-      attention: ノートパソコンをお持ちの方は持参ください。スクロールボタンのついたマウスも必要になります。
 - slot: 11:10 - 11:40
   会場1:
     presentations:
