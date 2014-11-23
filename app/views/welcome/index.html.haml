@@ -3,11 +3,11 @@
     %h1 デジコミュ秋田 2014
   .text-center
     %h2 2014年11月22日(土曜日)
-    #{link_to "お申し込みの確認", "http://digicommu-akita.doorkeeper.jp/events/14537", class:"btn btn-primary", target:"_blank"}
-    #{link_to "ライトニングトークス申し込み", "https://docs.google.com/spreadsheet/viewform?formkey=dHM1dUd1WUNtRmZyVXZCbWRpSVlqdUE6MA#gid=0", class:"btn btn-primary", target:"_blank"}
+    !!!#{link_to "お申し込みの確認", "http://digicommu-akita.doorkeeper.jp/events/14537", class:"btn btn-primary", target:"_blank"}
+    !!!#{link_to "ライトニングトークス申し込み", "https://docs.google.com/spreadsheet/viewform?formkey=dHM1dUd1WUNtRmZyVXZCbWRpSVlqdUE6MA#gid=0", class:"btn btn-primary", target:"_blank"}
   .text-center
     %font{color:"white"}
-      イベントへの参加申し込みは締め切りました。<br />ライトニングトークスの申し込みは引き続き行っています。
+      イベントは終了しました。たくさんのご参加ありがとうございました。
 
 .row
   .span1
@@ -151,7 +151,7 @@
                       ※ #{raw presentation["attention"]}
                 - if /ビアバッシュ/ =~ presentation["title"]
                   .text-right
-                    #{link_to "ライトニングトークスに申し込む", "https://docs.google.com/spreadsheet/viewform?formkey=dHM1dUd1WUNtRmZyVXZCbWRpSVlqdUE6MA#gid=0", class:"btn btn-primary", target:"_blank"}
+                    !!!#{link_to "ライトニングトークスに申し込む", "https://docs.google.com/spreadsheet/viewform?formkey=dHM1dUd1WUNtRmZyVXZCbWRpSVlqdUE6MA#gid=0", class:"btn btn-primary", target:"_blank"}
           - else
             - %w(会場1 会場2).each do |room_name|
               - room = timeline[room_name]
