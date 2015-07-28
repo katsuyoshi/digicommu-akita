@@ -1,12 +1,37 @@
 Rails.application.routes.draw do
+
+  namespace :y2015 do
   get 'welcome/index'
-  get 'welcome/show'
+  end
+
+  namespace :"y2015" do
+    get 'welcome/index'
+  end
+
+  namespace :"y2014" do
+    get 'welcome/index'
+    get 'welcome/show'
+  end
+  
+  get 'welcome/index'     => 'y2015/welcome#index'
+#  get 'welcome/show'
+
+  scope "2015" do
+    get 'welcome'         => 'y2015/welcome#index'
+    get 'welcome/index'   => 'y2015/welcome#index'
+  end
+
+  scope "2014" do
+    get 'welcome'         => 'y2014/welcome#index'
+    get 'welcome/index'   => 'y2014/welcome#index'
+    get 'welcome/show'    => 'y2014/welcome#show'
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root 'y2015/welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

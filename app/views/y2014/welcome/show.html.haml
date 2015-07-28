@@ -1,0 +1,18 @@
+%h1= link_to "デジコミュ秋田 2014", y2014_welcome_index_path
+%hr
+%h3= @presentation["title"]
+
+- unless @room_name == "all"
+  %p
+    %b #{@slot} : #{@room_name}
+
+%p=raw @presentation["summary"]
+
+- if @presentation["attention"]
+  %p
+    %font{color:"red"}
+      ※ #{raw @presentation["attention"]}
+
+
+%a{href:"#", onclick:'history.go(-1);return false;'} 戻る
+

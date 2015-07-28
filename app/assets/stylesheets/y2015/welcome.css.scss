@@ -1,0 +1,28 @@
+// Place all the styles related to the y2015/welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Needs latest Compass, add '@import "compass"' to your scss
+// Permalink - use to edit and share this gradient:
+// http://colorzilla.com/gradient-editor/#febf04+8,ffd65e+100
+
+@import "compass"
+
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  background-color: rgb(254,191,4); // Old browsers
+  @include filter-gradient(#febf04, #ffd65e, vertical); // IE6-9
+  @include background-image(linear-gradient(top,  rgba(254,191,4,1) 8%,rgba(255,214,94,1) 100%));
+
+  h1, h2 {
+    color: white;
+  }
+}

@@ -1,0 +1,8 @@
+.hero-unit
+  .text-center
+    %h1 デジコミュ秋田 2015
+  .text-center
+    %h2 2015年11月24日(土曜日) に開催します。
+    - held_at = Time.new 2015, 11, 24
+    - now = Time.now
+    %h3 開催まであと#{((held_at - now) / 1.day).ceil.to_i}日
