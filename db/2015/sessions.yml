@@ -21,7 +21,7 @@
   session:
     title: 網元起動隊 デジコミュ秋田
     overview: |-
-      概要：ハンズオン形式でAMIMOTO(※)を触ることによりAWSへの理解を深めましょう！
+      ハンズオン形式でAMIMOTO(※)を触ることによりAWSへの理解を深めましょう！
       ※AMIMOTOとはAWSを利用したハイパフォーマンスにチューニングされたWordpress環境です。
 
 - id: dzo
