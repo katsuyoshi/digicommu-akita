@@ -32,5 +32,10 @@
   p {
     margin-bottom: 30px;
   }
+
+  .table-borderless td, th {
+    border:none;
+  }
+
 }
 

@@ -1,0 +1,20 @@
+%h2 セッション
+
+%p
+  現在(10/15)決定しているセッションです。
+  %br
+  この他にも予定しているセッションがありますの楽しみにしててください。
+  %br
+  詳細が決まり次第更新します。
+
+%table.table
+  %tr
+    %th タイトル
+    %th 発表者
+    %th コミュニティ
+  - @sessions.each do |session|
+    %tr
+      %td= link_to session["session"]["title"], y2015_welcome_show_path(id:session["id"])
+      %td= session["name"]
+      %td= session["organization"]
+

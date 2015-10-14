@@ -1,0 +1,29 @@
+%h1= link_to "デジコミュ秋田 2015", y2015_welcome_index_path
+
+%h2
+%table.table.table-borderless
+  %tr
+    %th{width:"100px"}
+    %td
+      %h3= @session["session"]["title"]
+  %tr
+    %th
+      - if @session["id"] == "dzo"
+        進行役
+      - else
+        発表者
+    %td #{@session["name"]}
+  %tr
+    %th 
+    %td #{@session["title"]}
+  %tr
+    %th コミュニティ
+    %td #{@session["organization"]}
+
+  %tr
+    %th 概要
+    %td= raw @session["session"]["overview"].gsub(/\n/, "<br />")
+
+%hr
+
+= link_to "戻る", y2015_welcome_index_path
