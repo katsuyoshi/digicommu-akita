@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
   namespace :y2015 do
-  get 'welcome/index'
+    get 'welcome/index'
   end
 
   namespace :"y2015" do
     get 'welcome/index'
+    get 'welcome/show'
   end
 
   namespace :"y2014" do
@@ -14,11 +15,12 @@ Rails.application.routes.draw do
   end
   
   get 'welcome/index'     => 'y2015/welcome#index'
-#  get 'welcome/show'
+  get 'welcome/show'  => 'y2015/welcome#show'
 
   scope "2015" do
     get 'welcome'         => 'y2015/welcome#index'
     get 'welcome/index'   => 'y2015/welcome#index'
+    get 'welcome/show'   => 'y2015/welcome#show'
   end
 
   scope "2014" do

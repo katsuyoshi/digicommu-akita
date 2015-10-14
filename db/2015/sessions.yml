@@ -1,0 +1,44 @@
+- id: tsujimotter
+  name: 辻順平（tsujimotter）
+  title: 日曜数学者
+  time: 90
+  session:
+    title: 折り紙と数学の意外な関係
+    overview: |-
+      みなさんは，正７角形を正確に書くことができますか？ちょっと難しそうですね。３次方程式を解くことはできますか？「そんなの習ってないよ」と思うかもしれません。
+
+      では、折り紙を折るのはどうですか？それならできそうな気がしますね。
+
+      実は、折り紙が折れれば、上にあげた図形や方程式は、書いたり解いたりできるのです。
+
+      今回の講演では、みなさんと一緒に折り紙を折りながら、折り紙と数学の意外な関係を体感してみたいと思います。数学が得意な方も苦手な方も、ぜひご参加下さい。
+
+- id: takeda
+  name: 武田一成
+  organization: JAWS-UG秋田支部
+#  title: JAWS-UG秋田支部
+  time: 60
+  session:
+    title: 網元起動隊 デジコミュ秋田
+    overview: |-
+      概要：ハンズオン形式でAMIMOTO(※)を触ることによりAWSへの理解を深めましょう！
+      ※AMIMOTOとはAWSを利用したハイパフォーマンスにチューニングされたWordpress環境です。
+
+- id: dzo
+  organization: 日本Androidの会秋田支部 支部長
+  name: ｄぞ （ささき だいぞう）
+#  title: 日本Androidの会秋田支部 支部長
+  time: 90
+  session:
+    title: アイディア出しの手法に触れてみよう
+    overview: 色々なアイディア創出手法を使って，新たなITデバイスのアイディアを出してみましょう
+
+- id: s_sato
+  organization: Akita Ruby Meeting
+  name: さとうとしき
+  title: フロントエンドエンジニア
+  time: 15
+  session:
+    title: Selenium × WordPressで自動UIテスト
+    overview: Seleniumを利用し、CMS制作の効率化を図る
+
