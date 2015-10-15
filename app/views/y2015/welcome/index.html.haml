@@ -6,6 +6,9 @@
     - held_at = Time.new 2015, 11, 14
     - now = Time.now
     %h3 開催まであと#{((held_at - now) / 1.day).ceil.to_i}日
+    #{link_to "イベント申込み", "https://digicommu-akita.doorkeeper.jp/events/33010", class:"btn btn-primary", target:"_blank"}
+    #{link_to "ライトニングトークス申込み", "https://docs.google.com/forms/d/11wpfnwaNyQaIMMUYtdUAD3khPZMCYJB8FKvmIR92Ifk/viewform", class:"btn btn-primary", target:"_blank"}
+
 
 %h1.text-center 「覚醒」
 
@@ -19,11 +22,42 @@
   コミュニティーに関わっているかどうかは関係ありませんし、県内外も問いません。少しでも興味が湧く内容がありましたら、気兼ねなく参加していただければと思います。
 
 
-%p
-  %ul
-    %li 日時: 2015年11月14日(土)
-    %li 会場: #{link_to '秋田市にぎわい交流館AU（あう）4F(研修室1、研修室2)', 'http://www.akita-nigiwai-au.jp'} 秋田県秋田市 中通一丁目4番1号
+.row
+  .span2
+  .span10
+    %p
+      %table.table.table-borderless
+        %tr
+          %th 日時
+          %td 2015年11月14日(土)
+        %tr
+          %th 会場
+          %td
+            #{link_to '秋田市にぎわい交流館AU（あう）4F(研修室1、研修室2)', 'http://www.akita-nigiwai-au.jp'}
+            %br
+            秋田県秋田市 中通一丁目4番1号
 
+    %p
+      　イベントは、日中の本編と夕方からのビアバッシュと二部構成になっております。
+      %br
+      %br
+      　ビアバッシュでは例年通りライトニングトークスを開催します。
+      %br
+      ライトニングトークスのスピーカー、ドラ、タイマー係も募集しています。
+      %br
+      応募される方はこちらからお申込みください。
+      %br
+      %br
+      = link_to "ライトニングトークス申込み", "https://docs.google.com/forms/d/11wpfnwaNyQaIMMUYtdUAD3khPZMCYJB8FKvmIR92Ifk/viewform", class:"btn btn-primary", target:"_blank"
+      %br
+      %br
+      ライトニングトークスについてはこちらをご覧ください。
+      %br
+      = link_to "ライトニングトークスについて", "http://d.hatena.ne.jp/keyword/%A5%E9%A5%A4%A5%C8%A5%CB%A5%F3%A5%B0%A5%C8%A1%BC%A5%AF", target:"_blank"
+      %br
+
+
+.row
 = render partial:"sessions"
 
 = render partial:"schedule"
@@ -33,7 +67,6 @@
 %p
   その他内容は決まり次第更新します。
   %br
-  参加申込は数日中に開始する予定です。
   %br
-  #{link_to 'Doorkeeper', 'http://digicommu-akita.doorkeeper.jp/'}に登録いただけると申込開始時にお知らせできます。
-  %br
+  #{link_to "イベント申込み", "https://digicommu-akita.doorkeeper.jp/events/33010", class:"btn btn-primary", target:"_blank"}
+

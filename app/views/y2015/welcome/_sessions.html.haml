@@ -11,7 +11,7 @@
   %tr
     %th タイトル
     %th 発表者
-    %th コミュニティ
+    %th コミュニティ/団体
   - @sessions.each do |session|
     %tr
       %td= link_to session["session"]["title"], y2015_welcome_show_path(id:session["id"])

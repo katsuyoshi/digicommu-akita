@@ -15,7 +15,8 @@ class Y2015::WelcomeController < ApplicationController
   
     def fetch_sessions
       path = File.join(Rails.root, "db", "2015", "sessions.yml")
-      @sessions = YAML.load(File.read(path)).sort_by{|e| e["time"]}.reverse
+      index = 0
+      @sessions = YAML.load(File.read(path)).sort_by{|e| index -= 1; [e["time"] || 0, index]}.reverse
     end
     
     
