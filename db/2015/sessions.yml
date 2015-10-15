@@ -42,3 +42,8 @@
     title: Selenium × WordPressで自動UIテスト
     overview: Seleniumを利用し、CMS制作の効率化を図る
 
+- id: ingres
+  organization: 秋田イングレス活用研究会
+  session:
+    title: Ingressやろうぜ！
+

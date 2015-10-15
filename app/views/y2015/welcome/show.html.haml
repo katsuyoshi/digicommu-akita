@@ -3,26 +3,31 @@
 %h2
 %table.table.table-borderless
   %tr
-    %th{width:"100px"}
+    %th{width:"120px"}
     %td
       %h3= @session["session"]["title"]
-  %tr
-    %th
-      - if @session["id"] == "dzo"
-        進行役
-      - else
-        発表者
-    %td #{@session["name"]}
+
+  - presenter = @session["name"]
+  - if presenter
+    %tr
+      %th
+        - if @session["id"] == "dzo"
+          進行役
+        - else
+          発表者
+      %td #{presenter}
   %tr
     %th 
     %td #{@session["title"]}
   %tr
-    %th コミュニティ
+    %th コミュニティ/団体
     %td #{@session["organization"]}
 
-  %tr
-    %th 概要
-    %td= raw @session["session"]["overview"].gsub(/\n/, "<br />")
+  - overview = @session["session"]["overview"]
+  - if overview
+    %tr
+      %th 概要
+      %td= raw overview.gsub(/\n/, "<br />")
 
 %hr
 
