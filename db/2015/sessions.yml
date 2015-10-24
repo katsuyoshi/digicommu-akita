@@ -1,6 +1,8 @@
 - id: tsujimotter
   name: 辻順平（tsujimotter）
   title: 日曜数学者
+  start_at: 13:00
+  end_at: 14:30
   time: 90
   session:
     title: 折り紙と数学の意外な関係
@@ -41,6 +43,18 @@
   session:
     title: Selenium × WordPressで自動UIテスト
     overview: Seleniumを利用し、CMS制作の効率化を図る
+
+- id: zeronium
+  organization: 株式会社ゼロニウム
+  name: 伊藤茂之
+  time: 40
+  session:
+    title: 「Oculus Rift開発秘話　～ＶＲよもやま話～」
+    overview: 初めてチャレンジしたOculus Riftを使用したＶＲコンテンツの開発秘話を中心にＶＲの今と今後を考察します。
+
+- id: abe
+  organization: Akita Ruby Meeting
+  time: 20
 
 - id: ingres
   organization: 秋田イングレス活用研究会

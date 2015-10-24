@@ -1,0 +1,20 @@
+- session = @sessions.find{|s| s["id"] == session_id}
+- start_at = Time.new 2015, 11, 14, *(start_at.split(":").map{|e| e.to_i})
+- time ||= session["time"] if session
+- time ||= 30
+- end_at = start_at + time.minutes
+
+%tr.session
+  %td
+    #{start_at.strftime("%H:%M")} - #{end_at.strftime("%H:%M")}
+  - if session
+    %td
+      = link_to session["session"]["title"], y2015_welcome_show_path(id:session["id"]) if session["session"]
+    %td
+      = session["name"]
+    %td
+      = session["organization"]
+  - else
+    %td
+    %td
+    %td

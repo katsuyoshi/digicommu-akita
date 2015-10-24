@@ -14,7 +14,7 @@
     %th コミュニティ/団体
   - @sessions.each do |session|
     %tr
-      %td= link_to session["session"]["title"], y2015_welcome_show_path(id:session["id"])
+      %td= link_to session["session"]["title"], y2015_welcome_show_path(id:session["id"]) if session["session"]
       %td= session["name"]
       %td= session["organization"]
 
