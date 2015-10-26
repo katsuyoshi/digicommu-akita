@@ -13,7 +13,7 @@
     %td
       = session["name"]
     %td
-      = session["organization"]
+      = session["organization"] || session["title"]
   - else
     %td
     %td
