@@ -52,7 +52,12 @@
 
 - id: abe
   organization: Akita Ruby Meeting
-  time: 20
+  title: ノリット・ジャポン株式会社　企画・クリエイティブ事業部 副部長　ディレクター/ エンジニア
+  name: 阿部 文人 (あべ　ふみと)
+  time: 30
+  session:
+    title: WordPressだけで動かす爆速メディアECサイトの作り方
+    overview: 完全カスタマイズ可能なECとブログを組み合わせた『メディアECサイト』を超高速なWordPressでつくる方法！
 
 - id: ingres
   organization: 秋田イングレス活用研究会
