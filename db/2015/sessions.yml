@@ -15,6 +15,8 @@
 
       今回の講演では、みなさんと一緒に折り紙を折りながら、折り紙と数学の意外な関係を体感してみたいと思います。数学が得意な方も苦手な方も、ぜひご参加下さい。
 
+    short_overview: みなさんと一緒に折り紙を折りながら、折り紙と数学の意外な関係を体感してみたいと思います。
+
 - id: takeda
   name: 武田一成
   organization: JAWS-UG秋田支部
@@ -24,6 +26,7 @@
     overview: |-
       ハンズオン形式でAMIMOTO(※)を触ることによりAWSへの理解を深めましょう！
       ※AMIMOTOとはAWSを利用したハイパフォーマンスにチューニングされたWordpress環境です。
+    short_overview: AMIMOTO(Wordpress環境)を触ることによりAWSへの理解を深めましょう！
 
 - id: dzo
   organization: 日本Androidの会秋田支部
@@ -31,7 +34,8 @@
   time: 90
   session:
     title: アイディア出しの手法に触れてみよう
-    overview: 色々なアイディア創出手法を使って，新たなITデバイスのアイディアを出してみましょう
+    overview: 色々なアイディア創出手法を使って，新たなITデバイスのアイディアを出してみましょう。
+    short_overview: 色々なアイディア創出手法を使ってアイディアを出してみましょう。
 
 - id: s_sato
   organization: Akita Ruby Meeting
@@ -49,6 +53,7 @@
   session:
     title: 「Oculus Rift開発秘話　～ＶＲよもやま話～」
     overview: 初めてチャレンジしたOculus Riftを使用したＶＲコンテンツの開発秘話を中心にＶＲの今と今後を考察します。
+    short_overview: Oculus Riftを使用したＶＲコンテンツの開発秘話を中心に
 
 - id: abe
   organization: Akita Ruby Meeting
