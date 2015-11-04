@@ -9,9 +9,13 @@
     #{start_at.strftime("%H:%M")} - #{end_at.strftime("%H:%M")}
   - if session
     %td
-      = link_to session["session"]["title"], y2015_welcome_show_path(id:session["id"]) if session["session"]
+      %h4
+        - title = "#{session['session']['title']}"
+        = link_to title, y2015_welcome_show_path(id:session["id"]) if session["session"]
+      - overview = session["session"]["short_overview"] || session["session"]["overview"]
+      #{overview}
     %td
-      = session["name"]
+      #{session["name"]}
     %td
       = session["organization"] || session["title"]
   - else

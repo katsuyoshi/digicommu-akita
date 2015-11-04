@@ -6,10 +6,10 @@
 %table.table
 
   %tr.header
-    %th 時刻
+    %th{width:"100px"} 時刻
     %th タイトル
-    %th 発表者
-    %th コミュニティ/所属
+    %th{width:"200px"} 発表者
+    %th{width:"150px"} コミュニティ/所属
 
   %tr.session
     %td 10:00 - 10:05
@@ -47,28 +47,34 @@
 %table.table
 
   %tr.header
-    %th 時刻
+    %th{width:"100px"} 時刻
     %th タイトル
-    %th 発表者
-    %th コミュニティ/所属
+    %th{width:"200px"} 発表者
+    %th{width:"150px"} コミュニティ/所属
 
-  %tr.break
+  %tr.session
     %td 17:45 -
     %td{colspan:3} 開始
 
-  = render partial:"schedule_row", locals: { start_at:"18:00", session_id:""}
-  = render partial:"schedule_row", locals: { start_at:"18:30", session_id:"ingres"}
+  = render partial:"schedule_row", locals: { start_at:"18:15", session_id:"ingres"}
+
+  %tr.session
+    %td 18:45 - 17:00
+    %td{colspan:3} 歓談
 
   %tr.session
     %td 19:00 - 20:00
-    %td{colspan:3} ライトニングトークス
+    %td{colspan:3}
+      %h4
+        ライトニングトークス
+
+  %tr.session
+    %td 20:00 - 20:30
+    %td{colspan:3} 歓談
 
   %tr.break
-    %td 　　　- 20:30
-    %td{colspan:3} 終了
-  %tr.break
-    %td 　　　- 21:00
-    %td{colspan:3} 片付け
+    %td 20:30 - 21:00
+    %td{colspan:3} 終了 〜 片付け
 
 
 スケジュールは変更になる場合があります。
