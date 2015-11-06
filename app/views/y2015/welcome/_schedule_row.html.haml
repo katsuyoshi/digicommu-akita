@@ -9,6 +9,9 @@
     #{start_at.strftime("%H:%M")} - #{end_at.strftime("%H:%M")}
   - if session
     %td
+      - if session['session']['workshop']
+        %b 【ワークショップ】
+        %br
       %h4
         - title = "#{session['session']['title']}"
         = link_to title, y2015_welcome_show_path(id:session["id"]) if session["session"]
