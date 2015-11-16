@@ -15,8 +15,12 @@
       %h4
         - title = "#{session['session']['title']}"
         = link_to title, y2015_welcome_show_path(id:session["id"]) if session["session"]
+      - slide = "#{session['session']['slide']}"
       - overview = session["session"]["short_overview"] || session["session"]["overview"]
       #{overview}
+      - unless slide.blank?
+        %span.label.label-info
+          = link_to '発表資料', slide, class:"white-link-letter", target:"_blank"
     %td
       #{session["name"]}
     %td

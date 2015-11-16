@@ -28,6 +28,11 @@
     %tr
       %th 概要
       %td= raw overview.gsub(/\n/, "<br />")
+  - slide_embeded = @session["session"]["slide_embeded"]
+  - if slide_embeded
+    %tr
+      %th 発表資料
+      %td= raw slide_embeded
 
 %hr
 

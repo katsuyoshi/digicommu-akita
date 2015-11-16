@@ -1,3 +1,7 @@
+- id: opening
+  session:
+    slide: https://speakerdeck.com/itosoft/dezikomiyuqiu-tian-2015-opuningu
+
 - id: tsujimotter
   name: 辻順平（tsujimotter）
   title: 日曜数学者
@@ -6,6 +10,8 @@
   time: 90
   session:
     title: 折り紙と数学の意外な関係
+    slide: http://www.slideshare.net/junpeitsuji/2015-dcakita
+    slide_embeded: <iframe src="//www.slideshare.net/slideshow/embed_code/key/rYjX2u3QgJYf4W" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/junpeitsuji/2015-dcakita" title="折り紙と数学と意外な関係 - デジコミュ秋田2015 #dcakita " target="_blank">折り紙と数学と意外な関係 - デジコミュ秋田2015 #dcakita </a> </strong> from <strong><a href="//www.slideshare.net/junpeitsuji" target="_blank">Junpei Tsuji</a></strong> </div>
     workshop: true
     overview: |-
       みなさんは，正７角形を正確に書くことができますか？ちょっと難しそうですね。３次方程式を解くことはできますか？「そんなの習ってないよ」と思うかもしれません。
@@ -24,6 +30,8 @@
   time: 60
   session:
     title: 網元起動隊 デジコミュ秋田
+    slide: http://www.slideshare.net/kazunaritakeda/ss-55126209
+    slide_embeded: <iframe src="//www.slideshare.net/slideshow/embed_code/key/dZCdSJtPtTIf8" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kazunaritakeda/ss-55126209" title="網元起動隊 デジコミュ秋田" target="_blank">網元起動隊 デジコミュ秋田</a> </strong> from <strong><a href="//www.slideshare.net/kazunaritakeda" target="_blank">Kazunari Takeda</a></strong> </div>
     workshop: true
     overview: |-
       ハンズオン形式でAMIMOTO(※)を触ることによりAWSへの理解を深めましょう！
@@ -54,6 +62,8 @@
   time: 90
   session:
     title: アイディア出しの手法に触れてみよう
+    slide: https://www.slideshare.net/secret/A99BDoJ0UB4JyQ
+    slide_embeded: <iframe src="//www.slideshare.net/slideshow/embed_code/key/A99BDoJ0UB4JyQ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/A99BDoJ0UB4JyQ" title="Jaga session in digicommu Akita 2015" target="_blank">Jaga session in digicommu Akita 2015</a> </strong> from <strong><a href="//www.slideshare.net/dzonesasaki" target="_blank">dzonesasaki</a></strong> </div>
     workshop: true
     overview: 色々なアイディア創出手法を使って，新たなITデバイスのアイディアを出してみましょう。
     short_overview: 色々なアイディア創出手法を使ってアイディアを出してみましょう。
@@ -83,6 +93,8 @@
   time: 30
   session:
     title: WordPressだけで動かす爆速メディアECサイトの作り方
+    slide: http://www.slideshare.net/abefumito/wordpress-ec-55103142
+    slide_embeded: <iframe src="//www.slideshare.net/slideshow/embed_code/key/xo3drEjBAT3nj5" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/abefumito/wordpress-ec-55103142" title="WordPressだけで動かす 『爆速』メディアECサイトの作り方" target="_blank">WordPressだけで動かす 『爆速』メディアECサイトの作り方</a> </strong> from <strong><a href="//www.slideshare.net/abefumito" target="_blank">Fumito Abe</a></strong> </div>
     overview: 完全カスタマイズ可能なECとブログを組み合わせた『メディアECサイト』を超高速なWordPressでつくる方法！
 
 - id: ingres
@@ -90,4 +102,38 @@
   name: 小林秀樹
   session:
     title: Ingressやろうぜ！
+
+- id: lt
+  sessions:
+  - name: モリシタ
+    title:
+    slide:
+  - name: イシクロ
+    title:
+    slide:
+  - name: エチゼンヤ
+    title:
+    slide:
+  - name: ヤスノリ
+    title:
+    slide:
+  - name: ツジ
+    title:
+    slide:
+  - name: シバタ
+    title:
+    slide:
+  - name: カツヨシ
+    title:
+    slide: https://speakerdeck.com/itosoft/dezikomiyuqiu-tian-2015-lt-ji-shang-falsemi-lin
+  - name: ノロ
+    title:
+    slide:
+  - name: タケダ
+    title:
+    slide:
+  - name: トシキ
+    title:
+    slide:
+
 
