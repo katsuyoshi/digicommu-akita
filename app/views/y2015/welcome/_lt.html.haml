@@ -1,0 +1,12 @@
+%h4
+  ライトニングトークス
+
+- session = @sessions.find{|s| s["id"] == "lt"}
+%ul
+  - session["sessions"].each do |session|
+    %li
+      = session["name"]
+      - slide = "#{session['slide']}"
+      - unless slide.blank?
+        %span.label.label-info
+          = link_to '発表資料', slide, class:"white-link-letter", target:"_blank"

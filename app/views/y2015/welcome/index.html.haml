@@ -2,12 +2,18 @@
   .text-center
     %h1 デジコミュ秋田 2015
   .text-center
-    %h2 2015年11月14日(土曜日) に開催します。
     - held_at = Time.new 2015, 11, 14
     - now = Time.now
-    %h3 開催まであと#{((held_at - now) / 1.day).ceil.to_i}日
-    #{link_to "イベント申込み", "https://digicommu-akita.doorkeeper.jp/events/33010", class:"btn btn-primary", target:"_blank"}
-    #{link_to "ライトニングトークス申込み", "https://docs.google.com/forms/d/11wpfnwaNyQaIMMUYtdUAD3khPZMCYJB8FKvmIR92Ifk/viewform", class:"btn btn-primary", target:"_blank"}
+    - day = ((held_at - now) / 1.day).ceil.to_i
+    - finished = day < 0
+    - unless finished
+      %h2 2015年11月14日(土曜日) に開催します。
+      %h3 開催まであと#{}日
+      #{link_to "イベント申込み", "https://digicommu-akita.doorkeeper.jp/events/33010", class:"btn btn-primary", target:"_blank"}
+      #{link_to "ライトニングトークス申込み", "https://docs.google.com/forms/d/11wpfnwaNyQaIMMUYtdUAD3khPZMCYJB8FKvmIR92Ifk/viewform", class:"btn btn-primary", target:"_blank"}
+    - else
+      %h2 2015年11月14日(土曜日) に開催しました。
+      イベントは終了いたしました。参加いただいた皆様ありがとうございました。
 
 
 %h1.text-center 「覚醒」
@@ -52,7 +58,11 @@
             %br
             ビアバッシュ　(17:30-20:30) :　一般:1,500円,　学生: 500円,　小中高生のみでの参加はできません。
             %br
-            #{link_to "申込み", "https://digicommu-akita.doorkeeper.jp/events/33010", class:"btn btn-primary", target:"_blank"}
+            - unless finished
+              #{link_to "申込み", "https://digicommu-akita.doorkeeper.jp/events/33010", class:"btn btn-primary", target:"_blank"}
+        %tr
+          %th ハッシュタグ
+          %td #dcakita
 
 
     %p
@@ -64,18 +74,26 @@
       %br
       　ビアバッシュでは例年通りライトニングトークスを開催します。
       %br
-      ライトニングトークスのスピーカーを募集しています。(ドラ、タイマー係は決定しました)
+      - unless finished
+        ライトニングトークスのスピーカーを募集しています。(ドラ、タイマー係は決定しました)
+        %br
+        応募される方はこちらからお申込みください。
+        %br
+        %br
+        = link_to "ライトニングトークス申込み", "https://docs.google.com/forms/d/11wpfnwaNyQaIMMUYtdUAD3khPZMCYJB8FKvmIR92Ifk/viewform", class:"btn btn-primary", target:"_blank"
+        %br
+        %br
+        ライトニングトークスについてはこちらをご覧ください。
+        %br
+        = link_to "ライトニングトークスについて", "http://d.hatena.ne.jp/keyword/%A5%E9%A5%A4%A5%C8%A5%CB%A5%F3%A5%B0%A5%C8%A1%BC%A5%AF", target:"_blank"
+        %br
       %br
-      応募される方はこちらからお申込みください。
+      %h5 リンク
+      = link_to "Doorkeeper-デジコミュ秋田 : 次回案内を受けたい方はメンバー登録してください。", "https://digicommu-akita.doorkeeper.jp", target:"_blank"
       %br
+      = link_to "Facebookのイベントページ", "https://www.facebook.com/events/818499131594537/", target:"_blank"
       %br
-      = link_to "ライトニングトークス申込み", "https://docs.google.com/forms/d/11wpfnwaNyQaIMMUYtdUAD3khPZMCYJB8FKvmIR92Ifk/viewform", class:"btn btn-primary", target:"_blank"
-      %br
-      %br
-      ライトニングトークスについてはこちらをご覧ください。
-      %br
-      = link_to "ライトニングトークスについて", "http://d.hatena.ne.jp/keyword/%A5%E9%A5%A4%A5%C8%A5%CB%A5%F3%A5%B0%A5%C8%A1%BC%A5%AF", target:"_blank"
-      %br
+      = link_to "Twitter", "http://twitter.com/search?q=%23dcakita", target:"_blank"
 
 
 .row
@@ -85,5 +103,6 @@
 %p
   %br
   %br
-  #{link_to "イベント申込み", "https://digicommu-akita.doorkeeper.jp/events/33010", class:"btn btn-primary", target:"_blank"}
+  - unless finished
+    #{link_to "イベント申込み", "https://digicommu-akita.doorkeeper.jp/events/33010", class:"btn btn-primary", target:"_blank"}
 

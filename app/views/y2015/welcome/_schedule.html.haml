@@ -13,7 +13,13 @@
 
   %tr.session
     %td 10:00 - 10:05
-    %td{colspan:3} オープニング
+    %td{colspan:3}
+      オープニング
+      - session = @sessions.find{|s| s["id"] == "opening"}
+      - slide = "#{session['session']['slide']}"
+      - unless slide.blank?
+        %span.label.label-info
+          = link_to '発表資料', slide, class:"white-link-letter", target:"_blank"
 
   %tr.break
     %td 10:05 - 10:10
@@ -65,8 +71,7 @@
   %tr.session
     %td 19:00 - 20:00
     %td{colspan:3}
-      %h4
-        ライトニングトークス
+      = render 'lt', locals: { session_id:"lt"}
 
   %tr.session
     %td 20:00 - 20:30
