@@ -5,7 +5,7 @@
 %ul
   - session["sessions"].each do |session|
     %li
-      = session["name"]
+      #{session["title"]} - #{session["name"]}
       - slide = "#{session['slide']}"
       - unless slide.blank?
         %span.label.label-info
