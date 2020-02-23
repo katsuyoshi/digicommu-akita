@@ -22,5 +22,6 @@ module DigicommuAkita2014
 
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     config.eager_load = true
+    config.assets.compile = false # Disables security vulnerability
   end
 end
