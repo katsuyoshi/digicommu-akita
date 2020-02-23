@@ -21,5 +21,6 @@ module DigicommuAkita2014
     # config.i18n.default_locale = :de
 
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.eager_load = true
   end
 end
